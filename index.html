@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./images/Quiz-Image.png" />
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+
+  <title>Quiz App</title>
+</head>
+
+<body>
+  <div class=" min-vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="heading mb-4">
+      <h1 class="mb-0 text-black bg-white rounded-3 p-3">Quiz App</h1>
+    </div>
+
+
+    <div class="container ">
+      <div class="row">
+        <form class="d-block start-quiz d-block col-lg-8 offset-lg-2 d-flex flex-column gap-3" id="quizOptions">
+          <div class="form-floating">
+            <select class="form-select" id="categoryMenu" aria-label="category Select">
+              <option selected value="">Any Category</option>
+              <option value="9">General Knowledge</option>
+              <option value="27">Animals</option>
+              <option value="19">Science: Mathematics</option>
+              <option value="18">Science: Computers</option>
+              <option value="22">Geography</option>
+            </select>
+            <label for="categoryMenu">Choose Category</label>
+          </div>
+
+          <div class="form-floating">
+            <select class="form-select" id="difficultyOptions" aria-label="difficulty Select">
+              <option selected value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+            <label for="difficultyOptions">Choose Difficulty Level</label>
+          </div>
+
+          <div class="form-floating">
+            <input type="number" class="form-control" id="questionsNumber" placeholder="Number of Questions" />
+            <label for="QuestionsNumber">Number of Questions</label>
+          </div>
+
+          <button type="button" class="btn btn-start" id="startQuiz">
+            Start
+          </button>
+        </form>
+
+        <div id="myData"
+          class="d-none bg-white shadow-lg col-lg-6 offset-lg-3  p-4 rounded-3 d-flex flex-column justify-content-center align-items-center gap-3 ">
+        </div>
+
+
+        
+        <div id="finish"
+          class=" d-none question bg-white shadow-lg col-lg-12  p-4 rounded-3 d-flex flex-column justify-content-center align-items-center gap-3">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+ 
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
